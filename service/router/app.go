@@ -12,7 +12,7 @@ func Router() *gin.Engine {
 		context.String(http.StatusOK, "hello")
 	})
 
-	r.GET("/queryUrl", service.QueryUrl)
+	r.POST("/testAction", service.QueryUrl)
 
 	return r
 }
